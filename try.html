@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function validateForm() {
+    var sud = document.forms["myForm"]["fname"].value;
+	 var key = document.forms["myForm"]["lname"].value;
+
+document.write(sud.split("(?i)key").length - 1);
+}
+</script>
+</head>
+<body>
+
+<form name="myForm"
+onsubmit="return validateForm()" >
+TEXT AREA: <br><textarea name="fname" rows="10" cols="50">
+</textarea> <br>
+KEY: <input type="text" name="lname">
+<br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
